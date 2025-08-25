@@ -12,6 +12,7 @@ export default defineConfig(({ mode }) => ({
   plugins: [react(), mode === 'development' && componentTagger()].filter(
     Boolean
   ),
+  base: '/kanishka-portfolio/',
   resolve: {
     alias: {
       '@': path.resolve(__dirname, './src'),
